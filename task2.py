@@ -1,0 +1,5 @@
+n = int(input("Enter how many idlis you ate: \n"))
+if n <= 0: print("Please enter a positive number greater than 0.")
+elif n <= 2: print("So sad, I am hungry.")
+elif 2 < n < 4:print("I will be hungry soon.")
+else:print("I am good.")
