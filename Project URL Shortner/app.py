@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, render_template_string
+from flask import Flask, request, redirect, render_template
 import random
 import string
 
@@ -11,17 +11,18 @@ url_mapping = {}
 def generate_short_url(length=6):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    short_url = None
     if request.method == 'POST':
         long_url = request.form['long_url']
         short_url = generate_short_url()
         url_mapping[short_url] = long_url
-        return f'Short URL is: <a href="/{short_url}">/{short_url}</a>'
-    return '''<form method="post">
-                Long URL: <input type="text" name="long_url">
-                <input type="submit" value="Shorten">
-               </form>'''
+    return render_template('index.html', short_url=short_url)
 
 @app.route('/<short_url>')
 def redirect_to_url(short_url):

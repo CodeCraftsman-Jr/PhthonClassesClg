@@ -2,6 +2,8 @@
 
 This is a simple URL shortener application built with Flask.
 
+pip install -r requirements.txt
+
 ## Requirements
 - Python 
 - venv
