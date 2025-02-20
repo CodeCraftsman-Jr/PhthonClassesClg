@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .key {
+    width: 80px;
+    height: 80px;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .key .letters {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .key:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .call-button {
+    margin-top: 10px;
+  }
+  
+  .call {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+  }
+  
+  .call:hover {
+    background-color: #45a047;
+  }
+  

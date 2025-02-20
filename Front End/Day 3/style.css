@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background: url('https://t4.ftcdn.net/jpg/09/21/21/57/360_F_921215740_4DUxovbO13aBD168FvIWNgNg407oyMxc.jpg');
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 400px;
+    height: 400px;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0px 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.);
+}
+.input{
+    margin:15px;
+  
+}
+#guess{
+    width:300px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+#guess:hover{
+    cursor:grab;
+}
+#guess::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    display: none;
+} 
+.input button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    background:radial-gradient(rgb(10, 255, 43),rgb(2, 247, 35));
+}
+h3{
+    font-weight: bold;
+}
+.input button:hover{
+    background:radial-gradient(rgb(186, 9, 209),rgb(165, 11, 196));
+    box-shadow: 0 0 20px rgb(209, 4, 236);
+    transition: background 0.5s;
+    cursor:grab;
+}
+.input button:active{
+    transform: scale(0.9);
+}
+#playAgain{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    background:radial-gradient(rgb(3, 49, 255),rgb(26, 1, 247));
+}
+#playAgain:hover{
+    background:radial-gradient(rgb(102, 4, 4),rgb(233, 7, 7));
+    box-shadow: 0 0 20px rgb(255, 3, 3);
+    transition: background 0.5s;
+    cursor:grab;
+}
+#playAgain:active{
+    transform: scale(0.9);
+}
+#chances{
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+ 
+}

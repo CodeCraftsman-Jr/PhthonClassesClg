@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RanNum Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+    <h3>Guess the Number between 1 to 100</h3>
+    <h4 id="result"></h4>
+    <div class="input">
+        <input type="number" name="guess" id="guess" placeholder="Enter your guess">
+    </div>
+    <div class="input">
+        <button type="button" onclick="checkGuess()">Check</button>
+    </div>
+    <h3>Chances Left: <span id="chances">5</span></h3>
+    <button type="button" id="playAgain" onclick="playAgain()">Play Again</button>   
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content {
+    font-size: 24px;
+    color: #333;
+    z-index: 10;
+}
+
+.pop {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png');
+    background-size: cover;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: moveUp 4s forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+        opacity: 100;
+    }
+    50%{
+        filter: hue-rotate(310deg);
+    }
+    100% {
+        transform: translateY(-400px) scale(5);
+        opacity: 0; 
+        filter: hue-rotate(240deg);
+    }
+}
